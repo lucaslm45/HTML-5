@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR" >
+    <head>
+        <title>Unidade 02 - Elemento Head</title>
+        <!--Um metadado pode dizer do que se trata aquela informação;
+Facilita o entendimento dos relacionamentos
+Um site de busca pode entender o meu site através dos meus metadados-->
+        <meta charset="utf-8">
+        <meta name="author"     content="Lucas de Lima">
+        <!-- Software que criou esta página-->
+        <meta name="generator"  content="Brackets"> 
+        <!-- Keywords: palavras chave para encontrar essa página-->
+        <meta name="keywords"   content="HTML5, Curso Front End, CSS">
+        <meta name="description"    content="Pagina do curso de HTML5">
+        <meta name="application-name" content="iMedia Brasil">
+        
+        <!-- -->
+        <!-- Atualiza a página a cada 4 segundos-->
+        <meta http-equiv="refresh" content="4"> 
+        
+        <!-- inner serve para você escrever algo dentro de um elemento -->
+        <!-- random * 50 = vai até 50 -->
+        <script>    
+            function sorteioNumero() {
+                resultado.innerHTML = Math.random() * 50;
+            }
+             
+            window.onload = sorteioNumero;
+            
+        </script>
+    </head>
+    <body>
+        <p id="resultado"></p>
+    </body>
+</html>
